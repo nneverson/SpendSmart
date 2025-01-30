@@ -23,6 +23,18 @@ namespace SpendSmart.Controllers
             return View();
         }
 
+        public IActionResult Expenses()
+        {
+            return View();
+        }
+        public IActionResult CreateEditExpenses()
+        {
+            return View();
+        }
+        public IActionResult SubmitForm(Expense model)
+        {
+            return RedirectToAction("Expenses");
+        }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
